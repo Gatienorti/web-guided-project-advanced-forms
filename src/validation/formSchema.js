@@ -8,6 +8,7 @@ export default yup.object().shape({
     .min(3, "username must be 3 chars long"),
   email: yup.string(),
   civil: yup.string(),
+  role: yup.string(),
   // we are done with checkboxes
   hiking: yup.boolean(),
   reading: yup.boolean(),
