@@ -89,11 +89,18 @@ export default function App() {
       // run validate using the value
       .validate(value) // validating this value
       .then(() => {
+        // happy path = success and clear error
         setFormErrors({
           ...formErrors,
           [name]: "",
         });
-      });
+      })
+      .catch((err) => {
+        setFormErrors({
+          ...formErrors,
+          
+        })
+      })
 
     setFormValues({
       ...formValues,
