@@ -95,13 +95,14 @@ export default function App() {
           [name]: "",
         });
       })
+      // if the validation is unsuccessful, we can set the error message 
       .catch((err) => {
         setFormErrors({
           ...formErrors,
-          
-        })
-      })
-
+          // validation error from the schema
+          [name]: err.errors[0],
+        });
+      });
     setFormValues({
       ...formValues,
       [name]: value, // NOT AN ARRAY
