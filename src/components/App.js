@@ -69,7 +69,7 @@ export default function App() {
       .post("http://buddies.com/api/friends", newFriend)
       .then((res) => {
         setFriends([res.data, ...friends]);
-        setFormErrors(initialFormValues);
+        setFormValues(initialFormValues);      
       })
       .catch((err) => {
         console.log(err);
