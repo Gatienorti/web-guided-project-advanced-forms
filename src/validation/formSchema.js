@@ -6,7 +6,10 @@ export default yup.object().shape({
     .string()
     .required("username is required")
     .min(3, "username must be 3 chars long"),
-  email: yup.string(),
+  email: yup
+    .string()
+    .email("Must be valid email address")
+    .required("Must include email address"),
   civil: yup.string(),
   role: yup.string(),
   // we are done with checkboxes
