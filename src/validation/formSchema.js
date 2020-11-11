@@ -1,5 +1,6 @@
 // Here goes the schema for the form
-import * 
+import * as yup from "yup";
+
 
 
 // const formSchema = Yup.object().shape({
