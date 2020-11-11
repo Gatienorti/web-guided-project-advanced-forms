@@ -51,7 +51,7 @@ export default function App() {
     // 🔥 STEP 5- IMPLEMENT! ON SUCCESS PUT FRIENDS IN STATE
     //    helper to [GET] all friends from `http://buddies.com/api/friends`
     axios
-      .get(`http://buddies.com/api/friends`)
+      .get("http://buddies.com/api/friends")
       .then((res) => {
         setFriends(res.data);
       })
@@ -65,7 +65,7 @@ export default function App() {
     // 🔥 STEP 6- IMPLEMENT! ON SUCCESS ADD NEWLY CREATED FRIEND TO STATE
     //    helper to [POST] `newFriend` to `http://buddies.com/api/friends`
     //    and regardless of success or failure, the form should reset
-    axios.post()
+    axios.post("http://buddies.com/api/friends", )
   };
 
   //////////////// EVENT HANDLERS ////////////////
