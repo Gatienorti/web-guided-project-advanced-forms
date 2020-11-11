@@ -85,8 +85,9 @@ export default function App() {
     // yup.reach will allow us to "reach" into the schema and test only one part.
     // We give reach the schema as the first argument, and the key we want to test as the second.
     yup
-      .reach(schema, name)
-      .validate(value)
+      .reach(schema, name) // get to this part of the schema
+      // run validate using the value
+      .validate(value) // validating this value
       .then(() => {
         setFormErrors({
           ...formErrors,
