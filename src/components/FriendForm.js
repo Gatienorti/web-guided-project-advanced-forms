@@ -103,12 +103,13 @@ export default function FriendForm(props) {
         {/* ////////// CHECKBOXES ////////// */}
         {/* ////////// CHECKBOXES ////////// */}
         {/* ////////// CHECKBOXES ////////// */}
-        <label>Hiking
+        <label>
+          Hiking
           <input
-          type="checkbox"
-          name="hiking"
-          checked={}
-           />
+            type="checkbox"
+            name="hiking"
+            checked={values.hiking === true}
+          />
         </label>
 
         <label>Reading</label>
