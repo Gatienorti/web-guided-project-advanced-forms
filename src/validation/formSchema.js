@@ -1,7 +1,7 @@
 // Here goes the schema for the form
 import * as yup from "yup";
 
-
+export default yup.object().shape()
 
 // const formSchema = Yup.object().shape({
 //     email: Yup
