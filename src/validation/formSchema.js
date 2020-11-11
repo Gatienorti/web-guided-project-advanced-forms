@@ -10,7 +10,9 @@ export default yup.object().shape({
     .string()
     .email("Must be valid email address")
     .required("Must include email address"),
-  civil: yup.string().required("Relationship status please"),
+  civil: yup
+    .string()
+    .oneOf(["married", "single"], "Relationship status please"),
   role: yup
     .string()
     .oneOf(["tl", "instructor", "alumni, ", "student"], "role is required"),
